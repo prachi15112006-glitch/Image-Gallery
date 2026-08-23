@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+</head>
+
+<body>
+
+    <header>
+        <h1>🌿 Nature Image Gallery</h1>
+        <p>Explore the amazing world of animals</p>
+    </header>
+
+    <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+              type="text"
+              id="searchInput"
+              placeholder="Search The Images "
+              onkeyup="searchImages()">
+    </div>
+    <!-- Category Buttons -->
+    <div class="categories">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('mammals')">Mammals</button>
+        <button onclick="filterImages('reptiles')">Reptiles</button>
+        <button onclick="filterImages('birds')">Birds</button>
+        <button onclick="filterImages('marine')">Marine Life</button>
+        <button onclick="filterImages('insects')">Insects</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <!-- ================= MAMMALS ================= -->
+
+        <div class="image-card mammals">
+            <img src="https://plus.unsplash.com/premium_photo-1669725687221-6fe12c2da6b1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Lion"
+            onclick="openLightbox(this)" >
+            <h3>Lion</h3>
+        </div>
+
+        <div class="image-card mammals">
+            <img src="https://plus.unsplash.com/premium_photo-1661810056990-57be781caa2d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlcGhhbnR8ZW58MHx8MHx8fDA%3D" alt="Elephant"
+            onclick="openLightbox(this)" >
+            <h3>Elephant</h3>
+        </div>
+
+        <div class="image-card mammals">
+            <img src="https://plus.unsplash.com/premium_photo-1661847643150-4e06569d2ec1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGlnZXJ8ZW58MHx8MHx8fDA%3D" alt="Tiger"
+            onclick="openLightbox(this)" >
+            <h3>Tiger</h3>
+        </div>
+
+        <div class="image-card mammals">
+            <img src="https://plus.unsplash.com/premium_photo-1661810398337-1fddd20130c3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2lyYWZmZXxlbnwwfHwwfHx8MA%3D%3D" alt="Giraffe"
+            onclick="openLightbox(this)" >
+            <h3>Giraffe</h3>
+        </div>
+
+        <div class="image-card mammals">
+            <img src="https://images.pexels.com/photos/19590471/pexels-photo-19590471/free-photo-of-panda-bear-sitting-on-ground.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Panda"
+            onclick="openLightbox(this)" >
+            <h3>Panda</h3>
+        </div>
+
+        <div class="image-card mammals">
+            <img src="https://images.unsplash.com/photo-1588167056547-c183313da47c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29sZnxlbnwwfHwwfHx8MA%3D%3D" alt="Wolf"
+            onclick="openLightbox(this)" >
+            <h3>Wolf</h3>
+        </div>
+
+
+        <!-- ================= REPTILES ================= -->
+
+        <div class="image-card reptiles">
+            <img src="https://plus.unsplash.com/premium_photo-1661897154120-5b27cd6a0bd5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c25ha2V8ZW58MHx8MHx8fDA%3D" alt="Snake"
+            onclick="openLightbox(this)" >
+            <h3>Snake</h3>
+        </div>
+
+        <div class="image-card reptiles">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.vcyGIUEpKsRnXI96tGEJ_AHaEm?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Crocodile"
+            onclick="openLightbox(this)" >
+            <h3>Crocodile</h3>
+        </div>
+
+        <div class="image-card reptiles">
+            <img src="https://plus.unsplash.com/premium_photo-1675432656807-216d786dd468?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHVydGxlfGVufDB8fDB8fHww" alt="Turtle"
+            onclick="openLightbox(this)" >
+            <h3>Turtle</h3>
+        </div>
+
+        <div class="image-card reptiles">
+            <img src="https://images.unsplash.com/photo-1617540021016-72023b487e99?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hhbWVsb258ZW58MHx8MHx8fDA%3D" alt="Chameleon"
+            onclick="openLightbox(this)" >
+            <h3>Chameleon</h3>
+        </div>
+
+        <div class="image-card reptiles">
+            <img src="https://plus.unsplash.com/premium_photo-1661898166024-7d141970335b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aWd1YW5hfGVufDB8fDB8fHww" alt="Iguana"
+            onclick="openLightbox(this)" >
+            <h3>Iguana</h3>
+        </div>
+
+        <div class="image-card reptiles">
+            <img src="https://images.unsplash.com/photo-1597245623587-82578a8b0c90?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGl6YXJkfGVufDB8fDB8fHww" alt="Lizard"
+            onclick="openLightbox(this)" >
+            <h3>Lizard</h3>
+        </div>
+
+
+        <!-- ================= BIRDS ================= -->
+
+        <div class="image-card birds">
+            <img src="https://plus.unsplash.com/premium_photo-1673454201378-3867e051dca7?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFycm90c3xlbnwwfHwwfHx8MA%3D%3D" alt="Parrot"
+            onclick="openLightbox(this)" >
+            <h3>Parrot</h3>
+        </div>
+
+        <div class="image-card birds">
+            <img src="https://plus.unsplash.com/premium_photo-1661832711795-a1cff19f9706?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWFnbGV8ZW58MHx8MHx8fDA%3D" alt="Eagle"
+            onclick="openLightbox(this)" >
+            <h3>Eagle</h3>
+        </div>
+
+        <div class="image-card birds">
+            <img src="https://plus.unsplash.com/premium_photo-1664304409780-6d31241e9058?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3dsfGVufDB8fDB8fHww" alt="Owl"
+            onclick="openLightbox(this)" >
+            <h3>Owl</h3>
+        </div>
+
+        <div class="image-card birds">
+            <img src="https://plus.unsplash.com/premium_photo-1694270553677-22680efa4d56?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVhY29ja3xlbnwwfHwwfHx8MA%3D%3D" alt="Peacock"
+            onclick="openLightbox(this)" >
+            <h3>Peacock</h3>
+        </div>
+
+        <div class="image-card birds">
+            <img src="https://plus.unsplash.com/premium_photo-1661812902668-c668fc201d57?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmxhbWluZ298ZW58MHx8MHx8fDA%3D" alt="Flamingo"
+            onclick="openLightbox(this)" >
+            <h3>Flamingo</h3>
+        </div>
+
+        <div class="image-card birds">
+            <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVuZ3VpbnxlbnwwfHwwfHx8MA%3D%3D" alt="Penguin"
+            onclick="openLightbox(this)" >
+            <h3>Penguin</h3>
+        </div>
+
+
+        <!-- ================= MARINE LIFE ================= -->
+
+        <div class="image-card marine">
+            <img src="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9scGhpbnxlbnwwfHwwfHx8MA%3D%3D" alt="Dolphin"
+            onclick="openLightbox(this)" >
+            <h3>Dolphin</h3>
+        </div>
+
+        <div class="image-card marine">
+            <img src="https://plus.unsplash.com/premium_photo-1725408119883-75a8281dd95b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2hhcmt8ZW58MHx8MHx8fDA%3D" alt="Shark"
+            onclick="openLightbox(this)" >
+            <h3>Shark</h3>
+        </div>
+
+        <div class="image-card marine">
+            <img src="https://plus.unsplash.com/premium_photo-1724668625323-ccd85574c6b9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2hhbGV8ZW58MHx8MHx8fDA%3D" alt="Whale"
+            onclick="openLightbox(this)" >
+            <h3>Whale</h3>
+        </div>
+
+        <div class="image-card marine">
+            <img src="https://images.unsplash.com/photo-1495012379376-194a416fcc5f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amVsbHlmaXNofGVufDB8fDB8fHwwh" alt="Jellyfish"
+            onclick="openLightbox(this)" >
+            <h3>Jellyfish</h3>
+        </div>
+
+        <div class="image-card marine">
+            <img src="https://images.unsplash.com/photo-1496196614460-48988a57fccf?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VhdHVydGxlfGVufDB8fDB8fHww" alt="Sea Turtle"
+            onclick="openLightbox(this)" >
+            <h3>Sea Turtle</h3>
+        </div>
+
+        <div class="image-card marine">
+            <img src="https://plus.unsplash.com/premium_photo-1723733104322-827186b5eb9e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2N0b3B1c3xlbnwwfHwwfHx8MA%3D%3D" alt="Octopus"
+            onclick="openLightbox(this)" >
+            <h3>Octopus</h3>
+        </div>
+
+
+        <!-- ================= INSECTS ================= -->
+
+        <div class="image-card insects">
+            <img src="https://plus.unsplash.com/premium_photo-1710462716386-08fe07bb3c61?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnV0dGVyZmx5fGVufDB8fDB8fHww" alt="Butterfly"
+            onclick="openLightbox(this)" >
+            <h3>Butterfly</h3>
+        </div>
+
+        <div class="image-card insects">
+            <img src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9uZXklMjBiZWV8ZW58MHx8MHx8fDA%3D" alt="Honeybee"
+            onclick="openLightbox(this)" >
+            <h3>Honeybee</h3>
+        </div>
+
+        <div class="image-card insects">
+            <img src="https://loremflickr.com/600/400/ladybug" alt="Ladybug"
+            onclick="openLightbox(this)" >
+            <h3>Ladybug</h3>
+        </div>
+
+        <div class="image-card insects">
+            <img src="https://images.unsplash.com/photo-1721426128061-087302a70b26?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJhZ29uZmx5fGVufDB8fDB8fHwwy" alt="Dragonfly"
+            onclick="openLightbox(this)" >
+            <h3>Dragonfly</h3>
+        </div>
+
+        <div class="image-card insects">
+            <img src="https://plus.unsplash.com/premium_photo-1661872687000-e33a6cbcd379?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVldGxlfGVufDB8fDB8fHww" alt="Beetle"
+            onclick="openLightbox(this)" >
+            <h3>Beetle</h3>
+        </div>
+
+        <div class="image-card insects">
+            <img src="https://plus.unsplash.com/premium_photo-1722966182942-387eb90895a3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3Jhc3Nob3BwZXJ8ZW58MHx8MHx8fDA%3Ds" alt="Grasshopper"
+            onclick="openLightbox(this)" >
+            <h3>Grasshopper</h3>
+        </div>
+
+          <p id="noResults">
+        No images found.Try searching for another image
+    </p>
+    </div>
+    
+    
+    <script src="script.js"></script>
+
+  
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn"
+        onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImage" src="" alt="">
+    </div>
+
+</body>
+</html>
